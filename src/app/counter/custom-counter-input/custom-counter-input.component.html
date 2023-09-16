@@ -1,0 +1,17 @@
+<div class="w-100">{{ channelName | async }}</div>
+<br />
+<div class="d-flex">
+  <input
+    type="text"
+    placeholder="Enter value"
+    class="form-control"
+    [(ngModel)]="value"
+  />
+  <button class="btn btn-primary ms-4" (click)="onAdd()">Add to counter</button>
+</div>
+
+<div>
+  <button class="btn btn-primary" (click)="onChangeChannelName()">
+    Change channel name
+  </button>
+</div>
